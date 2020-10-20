@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Steam Explore Queue Skipper",
+	"short_name": "ExQSkip",
+	"description": "Skips through Steam Discovery/Explore Queue 3 times. Skips through any explore queue started by the user.",
+	"author": "RaisingAgent",
+	"version": "1.6",
+	"icons": {
+		"48": "icon48.png",
+		"64": "icon64.png",
+		"96": "icon96.png",
+		"128": "icon128.png",
+		"256": "icon256.png"
+	},
+	"browser_action": {
+		"default_title": "Steam Explore Queue Skipper.",
+		"default_icon": {
+			"48": "icon48.png",
+			"64": "icon64.png",
+			"96": "icon96.png",
+			"128": "icon128.png",
+			"256": "icon256.png"
+		}
+	},
+	"content_scripts": [{
+		"matches": [
+			"https://store.steampowered.com/*"
+		],
+		"js": ["content.js"]
+	}]
+}
